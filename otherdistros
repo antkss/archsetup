@@ -1,0 +1,2 @@
+wget https://kali.download/nethunter-images/current/rootfs/kalifs-amd64-minimal.tar.xz -O /mnt/kalifs-amd64-minimal.tar.xz
+wget https://cdimage.ubuntu.com/ubuntu-base/releases/23.04/release/ubuntu-base-23.04-base-amd64.tar.gz -O /mnt/ubuntu-base-23.04-base-amd64.tar.gz
