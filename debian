@@ -1,13 +1,1 @@
-#!/bin/bash
-sudo apt update
-sudo apt -y install wget gnupg dirmngr
-sudo wget -q -O - https://archive.kali.org/archive-key.asc | gpg --import
-sudo gpg --keyserver keyserver.ubuntu.com --recv-key 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6
-sudo sh -c "echo 'deb http://http.kali.org/kali kali-rolling main non-free contrib' >> /etc/apt/sources.list"
-sudo sh -c "echo 'deb http://http.kali.org/kali kali-last-snapshot main non-free contrib' >> /etc/apt/sources.list"
-sudo gpg -a --export ED444FF07D8D0BF6 | sudo apt-key add -
-sudo apt update
-sudo apt -y upgrade
-sudo apt -y dist-upgrade
-sudo apt -y autoremove --purge
-sudo apt -y install kali-linux-everything
+wget 'https://http.kali.org/pool/main/k/kali-archive-keyring/kali-archive-keyring_2022.1_all.deb' && sudo dpkg -i kali-archive-keyring_2022.1_all.deb && sudo apt install kali-themes kali-defaults kali-themes-common kali-system-core kali-desktop-base kali-tweaks xfce4 lightdm
