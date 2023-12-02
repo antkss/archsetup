@@ -2,5 +2,5 @@
 # <file system> <dir> <type> <options> <dump> <pass>
 /dev/sda2       /       auto   defaults 0 0 
 /dev/sda1       /boot       auto  defaults   0 0
-/swap           none     swap   defaults,nofail 0 0
+/.swap           none     swap   defaults,nofail 0 0
 /dev/sdb2       /.disk      auto   rw,defaults,nofail  0 0 
